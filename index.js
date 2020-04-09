@@ -58,7 +58,7 @@ const queryUrl = `https://api.github.com/users/${username}`
 let responseObj = await axios.get(queryUrl);
 let {avatar_url : profileURL, bio, name} = responseObj.data
 // Using string template to fill up the skeleton of the readme file
-    let readmeTemplate = `
+let readmeTemplate = `
 # ${title}
 
 ## Description
@@ -71,7 +71,7 @@ ${description}
 
 ### User Name:
 
-${name}
+${username}
 
 ### Email:
 
@@ -109,6 +109,7 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 ## Contributing
 
 ${contributing}
+https://github.com/${}/
 
 ## Tests
 
