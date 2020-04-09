@@ -61,6 +61,7 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 ## Contributing
 
 Max Guo
+https://github.com/Maxguojiaq
 
 ## Tests
 
