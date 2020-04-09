@@ -1,9 +1,25 @@
 
-# Your Project Title
-README Smart Generator 
+# README-Generator
+
 ## Description
 
-This app will generate a good readme file for the project
+This simple web app that  will generate a good readme file for the project
+
+## About User
+
+![Shows the options](https://avatars1.githubusercontent.com/u/15637597?v=4)
+
+### User Name:
+
+MaxGuo
+
+### Email:
+
+Hidden
+
+### About:
+
+GIS advocate, spatial solution provider and lifelong learner  
 
 ## Table of Content
     
@@ -27,8 +43,8 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 
 ## Badges
 
-![ReadMe-Generator-Language](https://img.shields.io/github/languages/top/Maxguojiaqi/README Smart Generator )
-![ReadMe-Generator-packageJSON](https://img.shields.io/github/package-json/v/Maxguojiaqi/README Smart Generator )
+![ReadMe-Generator-Language](https://img.shields.io/github/languages/top/Maxguojiaqi/README-Generator)
+![ReadMe-Generator-packageJSON](https://img.shields.io/github/package-json/v/Maxguojiaqi/README-Generator)
 
 ## Contributing
 
@@ -38,19 +54,4 @@ Max Guo
 
 N/A
 
-## About User
-
-![Shows the options](https://avatars1.githubusercontent.com/u/15637597?v=4)
-
-### User Name:
-
-MaxGuo
-
-### Email:
-
-Hidden
-
-### About:
-
-GIS advocate, spatial solution provider and lifelong learner  
     

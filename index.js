@@ -17,7 +17,7 @@ const fs = require('fs')
 const axios = require('axios')
 const inquirer = require('inquirer')
 const util = require('util')
-
+// turn call be function into a promise function
 const writeFilePromise = util.promisify(fs.writeFile)
 
 
@@ -52,7 +52,7 @@ let answerObj = await inquirer.prompt([{
     message: 'Enter your project test instruction',
     name: 'tests'
     }])
-
+// destruct the object to obtain all the variables 
 let {username,title,description,installation,usage,contributing,tests} = answerObj
 const queryUrl = `https://api.github.com/users/${username}`
 let responseObj = await axios.get(queryUrl);
@@ -116,6 +116,7 @@ ${tests}
 
     
 `
+// write data to readme
 await writeFilePromise('README.md',readmeTemplate)
 }
 
