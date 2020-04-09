@@ -9,8 +9,6 @@
 // License
 // Contributing
 // Tests
-// Questions
-
 // User GitHub profile picture
 // User GitHub email
 
@@ -24,48 +22,64 @@ const writeFilePromise = util.promisify(fs.writeFile)
 
 
 async function readMeGenerator(){
+// Question to retrive information from user inputs
+let answerObj = await inquirer.prompt([{
+    message: 'Enter your GitHub username',
+    name: 'username'
+    },
+    {
+    message: 'Enter your Project title',
+    name: 'title'
+    },
+    {
+    message: 'Enter your Project Description',
+    name: 'description'
+    },
 
-    let answerObj = await inquirer.prompt([{
-        message: 'Enter your GitHub username',
-        name: 'username'
-        },
-        {
-        message: 'Enter your Project title',
-        name: 'title'
-        },
-        {
-        message: 'Enter your Project Description',
-        name: 'description'
-        },
+    {
+    message: 'How to install:',
+    name: 'installation'
+    },
+    {
+    message: 'Enter your project usage',
+    name: 'usage'
+    },
+    {
+    message: 'Enter your project contributor',
+    name: 'contributing'
+    },
+    {
+    message: 'Enter your project test instruction',
+    name: 'tests'
+    }])
 
-        {
-        message: 'Descript how to install:',
-        name: 'installation'
-        },
-        {
-        message: 'Enter your project usage',
-        name: 'usage'
-        },
-        {
-        message: 'Enter your project contributor',
-        name: 'contributing'
-        },
-        {
-        message: 'Enter your project test instruction',
-        name: 'tests'
-        }])
-
-    let {username,title,description,installation,usage,contributing,tests} = answerObj
-    const queryUrl = `https://api.github.com/users/${username}`
-    let responseObj = await axios.get(queryUrl);
-    let {avatar_url : profileURL, bio, name} = responseObj.data
-
+let {username,title,description,installation,usage,contributing,tests} = answerObj
+const queryUrl = `https://api.github.com/users/${username}`
+let responseObj = await axios.get(queryUrl);
+let {avatar_url : profileURL, bio, name} = responseObj.data
+// Using string template to fill up the skeleton of the readme file
     let readmeTemplate = `
-# Your Project Title
+# ${title}
 
 ## Description
 
 ${description}
+
+## About User
+
+![Shows the options](${profileURL})
+
+### User Name:
+
+${name}
+
+### Email:
+
+Hidden
+
+### About:
+
+${bio} 
 
 ## Table of Content
     
@@ -82,24 +96,10 @@ ${installation}
 
 ${usage} 
 
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-
 
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
-
-
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+Copyright 2020 - Max Guo. Code released under the MIT license.
 
 ## Badges
 
@@ -113,17 +113,10 @@ ${contributing}
 ## Tests
 
 ${tests}
-## About User
-![Shows the options](${profileURL})
-### User Name:
-${name}
-### Email:
-Hidden
-### About:
-${bio} 
+
     
 `
-    await writeFilePromise('README.md',readmeTemplate)
+await writeFilePromise('README.md',readmeTemplate)
 }
 
 readMeGenerator()
