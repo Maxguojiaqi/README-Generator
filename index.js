@@ -116,7 +116,7 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 
 ## Contributing
 
-https://github.com/${contributing}/
+https://github.com/${username}
 
 ## Tests
 

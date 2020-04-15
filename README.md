@@ -16,27 +16,17 @@
 * [Contributing](#Contributing)
 * [Tests](#Tests)
 
-
 ## Description
 
-This simple web app that  will generate a good readme file for the project
+testing project to create readme
 
-## User Story
-```
-GIVEN the developer has a GitHub profile and a repository
-
-WHEN prompted for the developer's GitHub username and repo specific information
-
-THEN a README for the repo is generated
-```
-
-## DeveloperURL
+## About User
 
 ![Shows the options](https://avatars1.githubusercontent.com/u/15637597?v=4)
 
-### DeveloperName:
+### User Name:
 
-MaxGuo
+Maxguojiaqi
 
 ### Email:
 
@@ -48,14 +38,11 @@ GIS advocate, spatial solution provider and lifelong learner
 
 ## Installation
 
-use git clone to clone the project locally and use npm install to install the project 
+run npm
 
 ## Usage 
 
 N/A 
-
-## Demo 
-![demo](https://media.giphy.com/media/Z9Dyr8JLm52WHUVRE0/giphy.gif)
 
 
 ## License
@@ -69,8 +56,7 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 
 ## Contributing
 
-Max Guo
-https://github.com/Maxguojiaq
+https://github.com/max guo/
 
 ## Tests
 
