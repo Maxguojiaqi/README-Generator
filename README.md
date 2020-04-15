@@ -52,7 +52,6 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 ## Badges
 
 ![ReadMe-Generator-Language](https://img.shields.io/github/languages/top/Maxguojiaqi/README-Generator)
-![ReadMe-Generator-packageJSON](https://img.shields.io/github/package-json/v/Maxguojiaqi/README-Generator)
 
 ## Contributing
 
