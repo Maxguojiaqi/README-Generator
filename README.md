@@ -1,6 +1,22 @@
 
 # README-Generator
 
+## Table of Content
+
+* [Description](#Description)
+* [DeveloperURL](#DeveloperURL)
+* [DeveloperName](#DeveloperName)
+* [Email](#Email)
+* [About](#About)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#Demo)
+* [License](#license)
+* [Badges](#Badges)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+
+
 ## Description
 
 This simple web app that  will generate a good readme file for the project
@@ -14,11 +30,11 @@ WHEN prompted for the developer's GitHub username and repo specific information
 THEN a README for the repo is generated
 ```
 
-## About User
+## DeveloperURL
 
 ![Shows the options](https://avatars1.githubusercontent.com/u/15637597?v=4)
 
-### User Name:
+### DeveloperName:
 
 MaxGuo
 
@@ -29,13 +45,6 @@ Hidden
 ### About:
 
 GIS advocate, spatial solution provider and lifelong learner  
-
-## Table of Content
-    
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
 
 ## Installation
 

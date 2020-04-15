@@ -61,6 +61,21 @@ let {avatar_url : profileURL, bio, name} = responseObj.data
 let readmeTemplate = `
 # ${title}
 
+## Table of Content
+
+* [Description](#Description)
+* [DeveloperURL](#DeveloperURL)
+* [DeveloperName](#DeveloperName)
+* [Email](#Email)
+* [About](#About)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Demo](#Demo)
+* [License](#license)
+* [Badges](#Badges)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+
 ## Description
 
 ${description}
@@ -80,13 +95,6 @@ Hidden
 ### About:
 
 ${bio} 
-
-## Table of Content
-    
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
 
 ## Installation
 
@@ -108,8 +116,7 @@ Copyright 2020 - Max Guo. Code released under the MIT license.
 
 ## Contributing
 
-${contributing}
-https://github.com/${}/
+https://github.com/${contributing}/
 
 ## Tests
 
